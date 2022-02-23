@@ -1,0 +1,36 @@
+mixin colorSample(firstLine, secondLine, className)
+    .colors-sample-item.colors-sample__item
+        div(class="colors-sample-item__sample colors-sample-item__sample_"+className)
+        .colors-sample-item__description
+            p #{firstLine} <br> #{secondLine}
+
+mixin typesSample(name, text1, text2, className, tag)
+    div(class="types-sample-item types-sample__item")
+        div(class="types-sample-item__name types-sample-item__name_"+className) #{name}
+        .types-sample-item__description !{"<"+tag+">"+text1+"<br>"+text2}
+           
+
+doctype html
+head 
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="../css/normalize.css")
+    link(rel="stylesheet" href="../css/main.css")
+    title Colors & Types
+body 
+    include ./includes/ui-kit-header
+    article.colors-types 
+        section.colors-sample.colors-types__colors 
+            +colorSample("Dark Shade 100%",  "#1F2041", "dark-100")
+            +colorSample("Dark Shade 75%", "#1F2041", "dark-75")
+            +colorSample("Dark Shade 50%", "#1F2041", "dark-50")
+            +colorSample("Dark Shade 25%", "#1F2041", "dark-25")
+            +colorSample("Dark Shade 5%", "#1F2041", "dark-5")
+            +colorSample("Purple", "#BC9CFF", "purple")
+            +colorSample("Green", "#6FCF97", "green")
+        section.types-sample.colors-types__types 
+            +typesSample("H1", "This one is the sub-section or", "widget title", "h1", "h1")
+            +typesSample("H2", "Next one is the item title inside", "widgets", "h2", "h2")
+            +typesSample("H3", "This is a label or CTA text", "", "h3", "h3")
+            +typesSample("Body", "This is the body text which is used for most", "of the design, like paragraphs, lists, etc.", "body", 'p class="body-text"')

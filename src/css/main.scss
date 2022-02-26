@@ -1,18 +1,18 @@
-$dark-100: #1F2041;
-$dark-75:  #1F2041BF;
-$dark-50: #1F204180;
-$dark-25: #1F204140;
-$dark-5:  #1F20410D;
-$primary: #BC9CFF;
-$secondary: #6FCF97;
+$dark-100: #1f2041;
+$dark-75: #1f2041bf;
+$dark-50: #1f204180;
+$dark-25: #1f204140;
+$dark-5: #1f20410d;
+$primary: #bc9cff;
+$secondary: #6fcf97;
+$gradient: linear-gradient($primary, #8BA4F9);
+$container-width-max: 1160px;
 
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
 h1 {
     margin: 0;
 }
-
 
 .colors-sample-item {
     display: flex;
@@ -21,14 +21,15 @@ h1 {
     &__description {
         display: flex;
         align-items: center;
-        vertical-align:bottom;
+        vertical-align: bottom;
         height: 70px;
         padding-left: 40px;
         font-family: Montserrat;
         font-style: normal;
         font-size: 19px;
         line-height: 28px;
-    }::first-line{
+    }
+    ::first-line {
         font-weight: bold;
     }
 
@@ -61,7 +62,6 @@ h1 {
     }
 }
 .colors-sample {
-
     &__item {
         margin-top: 20px;
         &:first-child {
@@ -101,8 +101,6 @@ h1 {
     }
     &__name {
         display: inline;
-
-        
     }
 
     &__name_h1 {
@@ -181,4 +179,160 @@ p.body-text {
     font-size: 14px;
     line-height: 24px;
     color: $dark-75;
+}
+
+.headers-footers {
+    background-color: #F4F4F6;
+}
+
+.main-header {
+    display: flex;
+    justify-content: center;
+
+    
+    background-color: white;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+
+    &__container {
+        width: 100%;
+        max-width: $container-width-max;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.main-logo {
+    width: 106px;
+    height: 40px;
+}
+
+.navigation {
+    display: flex;
+    height: 70px;
+    align-items: center;
+
+    &__button {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: $dark-75;
+    }
+    &__item {
+        margin-right: 20px;
+        display: inline-flex;
+        align-items: center;
+    }:last-child{
+        margin-right: 20px;
+    }
+    &__list {
+        display: flex;
+    }
+    &__login-button {
+        border-radius: 22px;
+        padding: 10px 20px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: #BC9CFF;
+        border: 2px solid;
+        display: inline-flex;
+        align-items: center;
+        margin: 15px 20px 15px 0;
+    }
+    &__menu {
+        display: flex;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: $dark-75;
+        align-items: center;
+        height: 100%;
+    }
+
+    &__menu::after {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        content: "";
+        background: transparent url('../img/expand_more.svg') no-repeat;
+        background-position: center;
+        width: 24px;
+        height: 21px;
+    }
+
+    &__menu:hover + &__submenu {
+        display: block  ;
+    }
+
+    &__submenu:hover {
+        display: block;
+    }
+
+    &__sign-up-button {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: white;
+        padding: 10px 20px;
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        border-radius: 22px;
+        display: inline-flex;
+        align-items: center;
+        margin: 15px 20px 15px 0;
+    }
+
+    &__submenu {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: -12px;
+    }
+
+    &__submenu-item {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: $dark-75;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: calc(100% + 24px);
+        height: 50px;
+        border-bottom: 1px solid gray;
+    }:last-child {
+        border-bottom: none;
+    }
+
+    &__button_bold{
+        font-weight: bold;
+    }
+
+    &__toggle-menu {
+        position: relative;
+    }
+
+    &__divider {
+        border-right: 1px solid rgba(31, 32, 65, 0.1);
+        height: 30px;
+    }
+}
+
+
+
+.wrapper {
+    margin-top: 40px;
 }

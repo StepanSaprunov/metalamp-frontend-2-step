@@ -1,0 +1,44 @@
+include ./includes/mixins.pug
+
+mixin header(username)
+    header.main-header 
+        .main-header__container
+            .main-header__item.main-logo
+                img(src="../img/Logo.svg", alt="logo")
+            nav.main-header__item.navigation 
+                ul.navigation__list
+                    li.navigation__item
+                        a(src="#" class="navigation__button navigation__button_bold") О нас
+                    li.navigation__item.navigation__toggle-menu
+                        a(src="#" class="navigation__menu") Услуги
+                        ul.navigation__submenu
+                            li.navigation__submenu-item Услуга 1
+                            li.navigation__submenu-item Услуга 2
+                            li.navigation__submenu-item Услуга 3
+                    li.navigation__item
+                        a(src="#" class="navigation__button") Вакансии
+                    li.navigation__item
+                        a(src="#" class="navigation__button") Новости
+                    li.navigation__item.navigation__toggle-menu
+                        a(src="#" class="navigation__menu") Соглашения
+                        ul.navigation__submenu
+                            li.navigation__submenu-item Соглашение 1
+                            li.navigation__submenu-item Соглашение 2
+                -  
+                if (!username)
+                    a(src="#" class="navigation__login-button navigation__item") Войти
+                    a(src="#" class="navigation__sign-up-button navigation__item") Зарегистрироваться 
+                else 
+                    .navigation__divider.navigation__item
+                    a(src="#" class="navigation__button navigation__item")= username
+
+        
+            
+
++doctypeHead("Headers & Footers")
+body.headers-footers
+    include ./includes/ui-kit-header
+    .wrapper
+        +header()
+    .wrapper
+        +header("Юлий Цезарь")

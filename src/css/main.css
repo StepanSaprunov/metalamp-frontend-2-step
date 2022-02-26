@@ -38,31 +38,31 @@ h1 {
 }
 
 .colors-sample-item__sample_dark-100 {
-  background-color: #1F2041;
+  background-color: #1f2041;
 }
 
 .colors-sample-item__sample_dark-25 {
-  background-color: #1F204140;
+  background-color: #1f204140;
 }
 
 .colors-sample-item__sample_dark-5 {
-  background-color: #1F20410D;
+  background-color: #1f20410d;
 }
 
 .colors-sample-item__sample_dark-50 {
-  background-color: #1F204180;
+  background-color: #1f204180;
 }
 
 .colors-sample-item__sample_dark-75 {
-  background-color: #1F2041BF;
+  background-color: #1f2041bf;
 }
 
 .colors-sample-item__sample_green {
-  background-color: #6FCF97;
+  background-color: #6fcf97;
 }
 
 .colors-sample-item__sample_purple {
-  background-color: #BC9CFF;
+  background-color: #bc9cff;
 }
 
 .colors-sample__item {
@@ -125,7 +125,7 @@ h1 {
   font-size: 24px;
   line-height: 29px;
   text-align: right;
-  color: #1F204140;
+  color: #1f204140;
 }
 
 .types-sample-item__name_h2 {
@@ -135,7 +135,7 @@ h1 {
   font-size: 19px;
   line-height: 23px;
   text-align: right;
-  color: #1F204140;
+  color: #1f204140;
 }
 
 .types-sample-item__name_h3 {
@@ -145,7 +145,7 @@ h1 {
   font-size: 12px;
   line-height: 15px;
   text-align: right;
-  color: #1F204140;
+  color: #1f204140;
 }
 
 .types-sample-item__name_body {
@@ -155,7 +155,7 @@ h1 {
   font-size: 14px;
   line-height: 24px;
   text-align: right;
-  color: #1F204140;
+  color: #1f204140;
 }
 
 h1 {
@@ -164,7 +164,7 @@ h1 {
   font-weight: bold;
   font-size: 24px;
   line-height: 29px;
-  color: #1F2041;
+  color: #1f2041;
 }
 
 h2 {
@@ -173,7 +173,7 @@ h2 {
   font-weight: bold;
   font-size: 19px;
   line-height: 23px;
-  color: #1F2041;
+  color: #1f2041;
 }
 
 h3 {
@@ -183,7 +183,7 @@ h3 {
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
-  color: #1F2041;
+  color: #1f2041;
 }
 
 p.body-text {
@@ -192,5 +192,209 @@ p.body-text {
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
-  color: #1F2041BF;
+  color: #1f2041bf;
+}
+
+.headers-footers {
+  background-color: #F4F4F6;
+}
+
+.main-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: white;
+  -webkit-box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+          box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+}
+
+.main-header__container {
+  width: 100%;
+  max-width: 1160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-logo {
+  width: 106px;
+  height: 40px;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 70px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation__button {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #1f2041bf;
+}
+
+.navigation__item {
+  margin-right: 20px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation :last-child {
+  margin-right: 20px;
+}
+
+.navigation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigation__login-button {
+  border-radius: 22px;
+  padding: 10px 20px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #BC9CFF;
+  border: 2px solid;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px 20px 15px 0;
+}
+
+.navigation__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #1f2041bf;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.navigation__menu::after {
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  content: "";
+  background: transparent url("../img/expand_more.svg") no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 21px;
+}
+
+.navigation__menu:hover + .navigation__submenu {
+  display: block;
+}
+
+.navigation__submenu:hover {
+  display: block;
+}
+
+.navigation__sign-up-button {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: white;
+  padding: 10px 20px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border-radius: 22px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px 20px 15px 0;
+}
+
+.navigation__submenu {
+  display: none;
+  position: absolute;
+  top: 70px;
+  left: -12px;
+}
+
+.navigation__submenu-item {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #1f2041bf;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: calc(100% + 24px);
+  height: 50px;
+  border-bottom: 1px solid gray;
+}
+
+.navigation :last-child {
+  border-bottom: none;
+}
+
+.navigation__button_bold {
+  font-weight: bold;
+}
+
+.navigation__toggle-menu {
+  position: relative;
+}
+
+.navigation__divider {
+  border-right: 1px solid rgba(31, 32, 65, 0.1);
+  height: 30px;
+}
+
+.wrapper {
+  margin-top: 40px;
 }

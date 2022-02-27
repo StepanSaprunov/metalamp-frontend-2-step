@@ -1,39 +1,62 @@
-include ./includes/mixins.pug
+include ./includes/mixins.pug   
 
-mixin header(username)
-    header.main-header 
-        .main-header__container
-            .main-header__item.main-logo
-                img(src="../img/Logo.svg", alt="logo")
-            nav.main-header__item.navigation 
-                ul.navigation__list
-                    li.navigation__item
-                        a(src="#" class="navigation__button navigation__button_bold") О нас
-                    li.navigation__item.navigation__toggle-menu
-                        a(src="#" class="navigation__menu") Услуги
-                        ul.navigation__submenu
-                            li.navigation__submenu-item Услуга 1
-                            li.navigation__submenu-item Услуга 2
-                            li.navigation__submenu-item Услуга 3
-                    li.navigation__item
-                        a(src="#" class="navigation__button") Вакансии
-                    li.navigation__item
-                        a(src="#" class="navigation__button") Новости
-                    li.navigation__item.navigation__toggle-menu
-                        a(src="#" class="navigation__menu") Соглашения
-                        ul.navigation__submenu
-                            li.navigation__submenu-item Соглашение 1
-                            li.navigation__submenu-item Соглашение 2
-                -  
-                if (!username)
-                    a(src="#" class="navigation__login-button navigation__item") Войти
-                    a(src="#" class="navigation__sign-up-button navigation__item") Зарегистрироваться 
-                else 
-                    .navigation__divider.navigation__item
-                    a(src="#" class="navigation__button navigation__item")= username
+mixin footer()
+    .footer
+        .footer__container.footer-info
+            .footer__title
+                .main-logo.footer__footer-logo 
+                    img(src="../img/Logo.svg", alt="logo")
+                p.footer__link
+                    | Бронирование номеров в лучшем <br>
+                    | отеле 2019 года по версии <br>
+                    | ассоциации «Отельные взгляды» 
 
-        
-            
+            nav.footer__title навигация
+                ul.footer__list 
+                    li.footer__item 
+                    a.footer__link(href="#") О нас
+                    li.footer__item 
+                        a.footer__link(href="#") Новости
+                    li.footer__item 
+                        a.footer__link(href="#") Служба поддержки
+                    li.footer__item 
+                        a.footer__link(href="#") Услуги
+            nav.footer__title о нас
+                ul.footer__list 
+                    li.footer__item 
+                    a.footer__link(href="#") О сервисе
+                    li.footer__item 
+                        a.footer__link(href="#") Наша команда
+                    li.footer__item 
+                        a.footer__link(href="#") Вакансии
+                    li.footer__item 
+                        a.footer__link(href="#") Инвесторы
+            nav.footer__title Служба поддержки
+                ul.footer__list 
+                    li.footer__item 
+                    a.footer__link(href="#") Соглашения
+                    li.footer__item 
+                        a.footer__link(href="#") Сообщества
+                    li.footer__item 
+                        a.footer__link(href="#") Связь с нами
+            nav.footer__title Подписка
+                ul.footer__list 
+                    li.footer__item 
+                    a.footer__link(href="#") 
+                        | Получайте специальные <br>
+                        | предложения и новости сервиса
+                    li.footer__item 
+                        form.footer__form(action="#", method="post") 
+                            input#footer__input-text(type="text", name="subscribe-text")
+                            button.footer__submit-button(type='submit') 
+        .footer__container.footer__container_lower
+            .footer__credits 
+                p.footer__copyright Copyright © 2018 Toxin отель. Все права защищены.
+                .footer__social-container
+                    img(src="../img/twitter.svg", alt="twitter")
+                    img(src="../img/facebook.svg", alt="facebook")
+                    img(src="../img/instagram.svg", alt="instagram")
+
 
 +doctypeHead("Headers & Footers")
 body.headers-footers
@@ -42,3 +65,5 @@ body.headers-footers
         +header()
     .wrapper
         +header("Юлий Цезарь")
+    .wrapper
+        +footer()

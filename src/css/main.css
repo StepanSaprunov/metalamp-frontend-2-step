@@ -196,7 +196,7 @@ p.body-text {
 }
 
 .headers-footers {
-  background-color: #F4F4F6;
+  background-color: #f4f4f6;
 }
 
 .main-header {
@@ -278,7 +278,7 @@ p.body-text {
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
-  color: #BC9CFF;
+  color: #bc9cff;
   border: 2px solid;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -337,8 +337,8 @@ p.body-text {
   text-transform: uppercase;
   color: white;
   padding: 10px 20px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
-  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   border-radius: 22px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -393,6 +393,66 @@ p.body-text {
 .navigation__divider {
   border-right: 1px solid rgba(31, 32, 65, 0.1);
   height: 30px;
+}
+
+.footer {
+  width: 100%;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 100px;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1160px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 1160px;
+}
+
+.footer__link {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #1f2041bf;
+  text-decoration: none;
+  text-transform: none;
+  margin-top: 20px;
+}
+
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 20px;
+}
+
+.footer__title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1f2041;
 }
 
 .wrapper {

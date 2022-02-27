@@ -5,7 +5,7 @@ $dark-25: #1f204140;
 $dark-5: #1f20410d;
 $primary: #bc9cff;
 $secondary: #6fcf97;
-$gradient: linear-gradient($primary, #8BA4F9);
+$gradient: linear-gradient($primary, #8ba4f9);
 $container-width-max: 1160px;
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
@@ -182,14 +182,13 @@ p.body-text {
 }
 
 .headers-footers {
-    background-color: #F4F4F6;
+    background-color: #f4f4f6;
 }
 
 .main-header {
     display: flex;
     justify-content: center;
 
-    
     background-color: white;
     box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
 
@@ -224,7 +223,8 @@ p.body-text {
         margin-right: 20px;
         display: inline-flex;
         align-items: center;
-    }:last-child{
+    }
+    :last-child {
         margin-right: 20px;
     }
     &__list {
@@ -239,7 +239,7 @@ p.body-text {
         font-size: 12px;
         line-height: 15px;
         text-transform: uppercase;
-        color: #BC9CFF;
+        color: #bc9cff;
         border: 2px solid;
         display: inline-flex;
         align-items: center;
@@ -262,14 +262,14 @@ p.body-text {
         justify-content: center;
         align-items: center;
         content: "";
-        background: transparent url('../img/expand_more.svg') no-repeat;
+        background: transparent url("../img/expand_more.svg") no-repeat;
         background-position: center;
         width: 24px;
         height: 21px;
     }
 
     &__menu:hover + &__submenu {
-        display: block  ;
+        display: block;
     }
 
     &__submenu:hover {
@@ -285,7 +285,7 @@ p.body-text {
         text-transform: uppercase;
         color: white;
         padding: 10px 20px;
-        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
         border-radius: 22px;
         display: inline-flex;
         align-items: center;
@@ -313,11 +313,12 @@ p.body-text {
         width: calc(100% + 24px);
         height: 50px;
         border-bottom: 1px solid gray;
-    }:last-child {
+    }
+    :last-child {
         border-bottom: none;
     }
 
-    &__button_bold{
+    &__button_bold {
         font-weight: bold;
     }
 
@@ -332,6 +333,102 @@ p.body-text {
 }
 
 
+.footer {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px;
+
+    &__container {
+        display: flex;
+        max-width: $container-width-max;
+        justify-content: space-between;
+        width: $container-width-max;
+    }
+    &__container_lower {
+    }
+    &__credits {
+    }
+    &__footer-logo {
+    }
+    &__form {
+    }
+    &__item {
+    }
+    &__link {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: $dark-75;
+        text-decoration: none;
+        text-transform: none;
+        margin-top: 20px;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+    }
+    &__social-container {
+    }
+    &__submit-button {
+    }
+    &__subscribe {
+    }
+    &__support {
+    }
+    &__title {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: $dark-100;
+    }
+}
+.header-ui-kit {
+}
+.headers-footers {
+}
+.main-header {
+    &__container {
+    }
+    &__item {
+    }
+}
+.main-logo {
+}
+.navigation {
+    &__button {
+    }
+    &__button_bold {
+    }
+    &__divider {
+    }
+    &__item {
+    }
+    &__list {
+    }
+    &__login-button {
+    }
+    &__menu {
+    }
+    &__sign-up-button {
+    }
+    &__submenu {
+    }
+    &__submenu-item {
+    }
+    &__toggle-menu {
+    }
+}
+.wrapper {
+}
 
 .wrapper {
     margin-top: 40px;

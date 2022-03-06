@@ -1,0 +1,26 @@
+.color-sample {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    
+    &__description {
+        font-family: Montserrat;
+        font-style: normal;
+        font-size: 19px; 
+        line-height: 28px;
+        height: 70px;
+        padding-left: 40px;
+    }
+    ::first-line {
+        font-weight: bold;
+    }
+
+    &__sample {
+        display: flex;
+        width: 70px;
+        height: 70px;
+        border-radius: 6px;
+        background-color: #000;
+    }
+}
+

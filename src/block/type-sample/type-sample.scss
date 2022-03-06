@@ -1,0 +1,16 @@
+.type-sample {
+    display: flex;
+
+    &__name {
+        display: flex;
+        margin-right: 30px;
+        width: 37px;
+        justify-content: flex-end;
+    }    
+
+    &__description {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}

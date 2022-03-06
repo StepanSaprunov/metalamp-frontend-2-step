@@ -9,16 +9,6 @@ mixin doctypeHead(title)
         link(rel="stylesheet" href="../css/main.css")
         title #{title}
 
-mixin colorSample(firstLine, secondLine, className)
-    .colors-sample-item.colors-sample__item
-        div(class="colors-sample-item__sample colors-sample-item__sample_"+className)
-        .colors-sample-item__description
-            p #{firstLine} <br> #{secondLine}
-
-mixin typesSample(name, text1, text2, className, tag)
-    div(class="types-sample-item types-sample__item")
-        div(class="types-sample-item__name types-sample-item__name_"+className) #{name}
-        .types-sample-item__description !{"<"+tag+">"+text1+"<br>"+text2}
 
 mixin header(username)
     header.main-header 

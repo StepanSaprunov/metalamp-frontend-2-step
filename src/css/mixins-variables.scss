@@ -1,0 +1,49 @@
+$dark-100: #1f2041;
+$dark-75: #1f2041bf;
+$dark-50: #1f204180;
+$dark-25: #1f204140;
+$dark-5: #1f20410d;
+$primary: #bc9cff;
+$secondary: #6fcf97;
+$gradient: linear-gradient($primary, #8ba4f9);
+$container-width-max: 1160px;
+
+@mixin h1-text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: $dark-100;    
+}
+
+@mixin h2-text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 23px;
+    color: $dark-100;
+}
+
+@mixin h3-text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: $dark-100;
+}
+
+@mixin body-text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: $dark-75;
+    
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");

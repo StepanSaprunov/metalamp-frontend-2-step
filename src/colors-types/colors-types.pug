@@ -1,0 +1,41 @@
+include ../block/color-sample/color-sample-mixin
+include ../block/type-sample/type-sample-mixin
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Colors & Types 
+        link(rel="stylesheet", href="./colors-types.css")
+
+    body 
+
+body
+    include ../block/header-ui-kit/header-ui-kit.pug
+    article.colors-types
+        section.colors-types__colors
+            .color-sample-container
+                +colorSample("Dark Shade 100%",  "#1F2041", "dark-100")
+            .color-sample-container
+                +colorSample("Dark Shade 75%", "#1F2041", "dark-75")
+            .color-sample-container
+                +colorSample("Dark Shade 50%", "#1F2041", "dark-50")
+            .color-sample-container
+                +colorSample("Dark Shade 25%", "#1F2041", "dark-25")
+            .color-sample-container
+                +colorSample("Dark Shade 5%", "#1F2041", "dark-5")
+            .color-sample-container
+                +colorSample("Purple", "#BC9CFF", "purple")
+            .color-sample-container
+                +colorSample("Green", "#6FCF97", "green")
+        section.colors-types__types
+            .type-sample-container
+                +typeSample("H1", "This one is the sub-section or", "widget title", "h1", "h1")
+            .type-sample-container
+                +typeSample("H2", "Next one is the item title inside", "widgets", "h2", "h2")
+            .type-sample-container
+                +typeSample("H3", "This is a label or CTA text", "", "h3", "h3")
+            .type-sample-container
+                +typeSample("Body", "This is the body text which is used for most", "of the design, like paragraphs, lists, etc.", "body", 'p class="body-text"')

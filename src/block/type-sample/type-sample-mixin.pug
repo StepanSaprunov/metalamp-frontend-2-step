@@ -1,0 +1,4 @@
+mixin typeSample(name, text1, text2, modificatorClass, tag)
+    .type-sample
+        div(class="type-sample__name type-sample__name_"+modificatorClass) #{name}
+        .type-sample__description !{"<"+tag+">"+text1+"<br>"+text2}

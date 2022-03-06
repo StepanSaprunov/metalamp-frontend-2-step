@@ -1,0 +1,12 @@
+.header-ui-kit {
+  border: none;
+  padding: 30px;
+  height: 108px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header-ui-kit .ui-kit-logo {
+  width: 48px;
+  height: 48px;
+}

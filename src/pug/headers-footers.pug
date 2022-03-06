@@ -47,15 +47,14 @@ mixin footer()
                         | предложения и новости сервиса
                     li.footer__item 
                         form.footer__form(action="#", method="post") 
-                            input#footer__input-text(type="text", name="subscribe-text")
+                            input#footer__input-text.footer__input-text(type="text", name="subscribe-text")
                             button.footer__submit-button(type='submit') 
-        .footer__container.footer__container_lower
-            .footer__credits 
-                p.footer__copyright Copyright © 2018 Toxin отель. Все права защищены.
-                .footer__social-container
-                    img(src="../img/twitter.svg", alt="twitter")
-                    img(src="../img/facebook.svg", alt="facebook")
-                    img(src="../img/instagram.svg", alt="instagram")
+        .footer__container.footer__credits
+            p.footer__link.footer__no-margin Copyright © 2018 Toxin отель. Все права защищены.
+            .footer__social-container
+                img.footer__social-logo(src="../img/twitter.svg", alt="twitter")
+                img.footer__social-logo(src="../img/facebook.svg", alt="facebook")
+                img.footer__social-logo(src="../img/instagram.svg", alt="instagram")
 
 
 +doctypeHead("Headers & Footers")

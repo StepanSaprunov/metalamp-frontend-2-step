@@ -1,0 +1,128 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    
+
+    &__container {
+        max-width: $container-width-max;
+        width: $container-width-max;
+        display: flex;
+        align-items: flex-start;
+    }
+    &__container_upper {
+        padding: 100px 0 95px 0;
+    }
+    &__separator {
+        border-top: 1px solid $dark-25;
+        height: 1px;
+        width: 100%;
+    }
+    &__container_lower {
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__footer-logo {
+        margin-bottom: 15px;
+        margin-top: 0;
+    }
+
+    &__link {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: $dark-75;
+        text-decoration: none;
+        text-transform: none;
+    }
+
+    &__link_main {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: $dark-100;
+    }
+
+    &__item {
+        margin-top: 15px;
+    }
+    &__item:first-child {
+        margin-top: 3px;
+        margin-bottom: 18px;
+    }
+    &__item:last-child {
+        margin-bottom: 0;
+    }
+
+    &__item_pre-form {
+        margin-bottom: 24px;
+    }
+
+    &__input-text {
+        width: 216px;
+        height: 44px;
+        padding-left: 14px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: $dark-100;
+        
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        box-sizing: border-box;
+        border-radius: 4px 0px 0px 4px;
+        border-right: none;
+    }
+    &__input-text::placeholder {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: $dark-25;
+    }
+
+    &__submit-button {
+        height: 44px;
+        width: 44px;
+        float: right;
+        background: no-repeat center url("/src/img/arrow_forward.svg");
+        border: 1px solid rgba(31, 32, 65, 0.25);
+        box-sizing: border-box;
+        border-radius: 0px 4px 4px 0px;
+        border-left: none;
+    }
+
+    &__column_1 {
+        margin-right: 46px;
+    }
+    &__column_2 {
+        margin-right: 58px;
+    }
+    &__column_3 {
+        margin-right: 93px;
+    }
+    &__column_4 {
+        margin-right: 52px;
+    }
+
+    &__social-logo {
+        margin-right: 20px;
+        width: 24px;
+        height: 24px;
+    }
+    &__social-logo:last-child {
+        margin-right: 0;
+    }
+}

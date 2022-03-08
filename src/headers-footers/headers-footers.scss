@@ -1,0 +1,25 @@
+@import "../css/mixins-variables.scss";
+@import "../css/normalize.css";
+
+@import "../block/header-ui-kit/header-ui-kit.scss";
+@import "../block/header/header.scss";
+@import "../block/footer/footer.scss";
+
+body {
+    margin: 0;
+    background-color: #f4f4f6;        
+}
+
+.headers-footers-wrapper {
+    margin-top: 32px;      
+}
+
+.headers-footers-wrapper-2 {
+    margin-top: 40px;
+}
+
+.headers-footers-wrapper-3 {
+    margin-top: 40px;
+}
+
+

@@ -1,0 +1,28 @@
+mixin header(username)
+    header.header 
+        .header__container
+            .header__item
+                .header__logo
+                    include ../logo/logo.pug
+            .header__item
+                nav.header__navigation
+                    ul.header__navigation-list
+                        li.header__navigation-item
+                            a(src="#" class="header__button header__button_main") О нас
+                        li.header__navigation-item
+                            .header__toggle-menu
+                                a(src="#" class="header__menu") Услуги
+                        li.header__navigation-item
+                            a(src="#" class="header__button") Вакансии
+                        li.header__navigation-item
+                            a(src="#" class="header__button") Новости
+                        li.header__navigation-item
+                            .header__toggle-menu
+                                a(src="#" class="header__menu") Соглашения
+                -  
+                if (!username)
+                    a(src="#" class="header__login-button") Войти
+                    a(src="#" class="header__signup-button") Зарегистрироваться 
+                else 
+                    .header__divider
+                    a(src="#" class="header__button")= username

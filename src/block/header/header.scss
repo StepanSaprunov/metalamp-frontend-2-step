@@ -1,0 +1,106 @@
+.header {
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    background-color: white;
+    box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+
+    &__container {
+        width: 100%;
+        max-width: $container-width-max;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+    }
+
+    &__navigation-list {
+        display: flex;
+        height: 70px;
+        align-items: center;
+        list-style: none;
+    }
+
+    &__navigation-item {
+        margin-right: 21px;
+    }
+
+    &__button {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: $dark-75;
+    }
+
+    &__menu {
+        display: flex;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: $dark-75;
+        align-items: center;
+        height: 100%;
+    }
+
+    &__menu::after {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        content: "";
+        background: transparent url("../img/expand_more.svg") no-repeat;
+        background-position: center;
+        width: 24px;
+        height: 21px;
+    }
+
+    &__login-button {
+        border-radius: 22px;
+        padding: 9px 18px 9px 18px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: #bc9cff;
+        border: 2px solid;
+        margin-right: 20px;
+    }
+
+    &__signup-button {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        text-transform: uppercase;
+        color: white;
+        padding: 9px 20px 9px 20px;
+        background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+        border-radius: 22px;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    &__button_main {
+        font-weight: bold;
+    }
+
+    &__divider {
+        border-right: 1px solid rgba(31, 32, 65, 0.1);
+        height: 30px;
+        margin-right: 20px;
+    }
+}

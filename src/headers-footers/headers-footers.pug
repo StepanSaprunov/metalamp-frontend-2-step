@@ -1,0 +1,19 @@
+include ../block/header/header-mixin.pug
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="../css/normalize.css")
+        link(rel="stylesheet", href="./headers-footers.css")
+        title Headers & Footers
+    body 
+        include ../block/header-ui-kit/header-ui-kit.pug
+        .headers-footers-wrapper
+            +header()
+        .headers-footers-wrapper-2 
+            +header("Юлий Цезарь")
+        .headers-footers-wrapper-3
+            include ../block/footer/footer.pug

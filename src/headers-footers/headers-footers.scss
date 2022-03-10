@@ -4,6 +4,7 @@
 @import "../block/header-ui-kit/header-ui-kit.scss";
 @import "../block/header/header.scss";
 @import "../block/footer/footer.scss";
+@import "../block/footer-mobile/footer-mobile.scss";
 
 body {
     margin: 0;
@@ -22,4 +23,8 @@ body {
     margin-top: 40px;
 }
 
-
+.headers-footers-wrapper-4 {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}

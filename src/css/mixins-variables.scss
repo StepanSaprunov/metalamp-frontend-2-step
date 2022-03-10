@@ -7,6 +7,7 @@ $primary: #bc9cff;
 $secondary: #6fcf97;
 $gradient: linear-gradient($primary, #8ba4f9);
 $container-width-max: 1160px;
+$mobile-width: 768px;
 
 @mixin h1-text {
     font-family: Montserrat;

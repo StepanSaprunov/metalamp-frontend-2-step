@@ -1,3 +1,6 @@
+@import "../logo/logo.scss";
+@import "../social-logos/social-logos.scss";
+
 .footer {
     display: flex;
     flex-direction: column;
@@ -97,7 +100,7 @@
         height: 44px;
         width: 44px;
         float: right;
-        background: no-repeat center url("/src/img/arrow_forward.svg");
+        background: no-repeat center url("/src/block/footer/img/arrow_forward.svg");
         border: 1px solid rgba(31, 32, 65, 0.25);
         box-sizing: border-box;
         border-radius: 0px 4px 4px 0px;
@@ -117,12 +120,5 @@
         margin-right: 52px;
     }
 
-    &__social-logo {
-        margin-right: 20px;
-        width: 24px;
-        height: 24px;
-    }
-    &__social-logo:last-child {
-        margin-right: 0;
-    }
+    
 }

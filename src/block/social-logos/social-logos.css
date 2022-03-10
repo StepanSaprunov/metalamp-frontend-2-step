@@ -1,0 +1,15 @@
+.social-logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social-logos__logo {
+  margin-right: 20px;
+  width: 24px;
+  height: 24px;
+}
+
+.social-logos__logo:last-child {
+  margin-right: 0;
+}

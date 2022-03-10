@@ -11,14 +11,14 @@ mixin header(username)
                             a(src="#" class="header__button header__button_main") О нас
                         li.header__navigation-item
                             .header__toggle-menu
-                                a(src="#" class="header__menu") Услуги
+                                a(src="#" class="header__menu") Услуги<span class="material-icons-outlined">expand_more</span>
                         li.header__navigation-item
                             a(src="#" class="header__button") Вакансии
                         li.header__navigation-item
                             a(src="#" class="header__button") Новости
                         li.header__navigation-item
                             .header__toggle-menu
-                                a(src="#" class="header__menu") Соглашения
+                                a(src="#" class="header__menu") Соглашения<span class="material-icons-outlined">expand_more</span>
                 -  
                 if (!username)
                     a(src="#" class="header__login-button") Войти
